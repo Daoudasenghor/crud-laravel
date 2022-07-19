@@ -26,6 +26,7 @@
             <th>title</th>
             <th>Author</th>
             <th>Description</th>
+            <th>Category</th>
             <th>Cover</th>
         </tr>
         @foreach ($products as $product)
@@ -35,6 +36,7 @@
             <td>{{ $product->title }}</td>
             <td>{{ $product->author}}</td>
             <td>{{ $product->description}}</td>
+            <td>{{ $product->category}}</td>
             <td><img src="/cover/{{ $product->cover }}" width="100px"></td>
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">

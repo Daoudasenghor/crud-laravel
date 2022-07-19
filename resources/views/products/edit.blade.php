@@ -28,9 +28,6 @@
         @method('PUT')
      
         <div class="row">
-        <div class="col-xs-4 col-sm-4 col-md-4">
-        </div>
-         <div class="col-xs-8 col-sm-8 col-md-8">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Title</strong>
@@ -51,6 +48,12 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
+                    <strong>Category</strong>
+                    <textarea class="form-control" style="height:150px" name="category" placeholder="">{{ $product->category }}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
                     <strong>Cover</strong>
                     <input type="file" name="cover" class="form-control" placeholder="">
                     <img src="/cover/{{ $product->cover }}" width="300px">
@@ -59,7 +62,6 @@
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-        </div>
         </div>
      
     </form>

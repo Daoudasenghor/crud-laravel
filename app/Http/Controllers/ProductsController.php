@@ -41,6 +41,7 @@ class ProductsController extends Controller
             'title' =>'required',
             'author' => 'required',
             'description' => 'required',
+            'category' => 'required',
             'cover' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
@@ -93,6 +94,7 @@ class ProductsController extends Controller
             'title' => 'required',
             'author' => 'required',
             'description' => 'required',
+            'category' => 'required',
         ]);
 
         $input = $request->all();
